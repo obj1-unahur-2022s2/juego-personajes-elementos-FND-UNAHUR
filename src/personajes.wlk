@@ -19,6 +19,7 @@ object floki {
 object mario {
 	var valorRecolectado = 0
 	var ultimoElementoVisitado 
+	method valorRecolectado() = valorRecolectado
 	method encontrar (elemento) {
 		valorRecolectado += elemento.valorOtorgado()
 		elemento.recibirTrabajo()

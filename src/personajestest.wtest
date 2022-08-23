@@ -1,0 +1,14 @@
+import personajes.*
+import jugadores.*
+import elementos.*
+
+test "test de luisa con mario activo" {
+	luisa.personajeActivo(mario)
+	luisa.aparece(aurora)
+	luisa.aparece(castillo)
+	
+	assert.equals(45,mario.valorRecolectado())
+	assert.notThat(mario.estaFeliz())
+	assert.equals(170,castillo.nivelDeDefensa())
+
+}
